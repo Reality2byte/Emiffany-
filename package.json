@@ -1,0 +1,30 @@
+{
+  "name": "json-schema-lite",
+  "version": "0.0.0-dev",
+  "private": true,
+  "description": "A minimal JSON Schema implementation",
+  "author": "Jason Desrosiers <jdesrosi@gmail.com>",
+  "license": "MIT",
+  "repository": "github:hyperjump-io/json-schema-lite",
+  "type": "module",
+  "exports": "./src/index.js",
+  "scripts": {
+    "lint": "eslint src",
+    "test": "vitest --watch=false",
+    "type-check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@stylistic/eslint-plugin": "*",
+    "@types/node": "*",
+    "eslint-import-resolver-typescript": "*",
+    "eslint-plugin-import": "*",
+    "json-schema-test-suite": "github:json-schema-org/JSON-Schema-Test-Suite",
+    "typescript-eslint": "*",
+    "vitest": "*"
+  },
+  "dependencies": {
+    "@hyperjump/json-pointer": "^1.1.0",
+    "@hyperjump/uri": "^1.3.1",
+    "json-stringify-deterministic": "^1.0.12"
+  }
+}
